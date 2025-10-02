@@ -70,4 +70,12 @@ Update users information in the tomcat-users.xml file goto tomcat home directory
 	<user username="tomcat" password="s3cret" roles="manager-gui"/>
 Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+---->
+<role rolename="manager-gui" />
+<user username="tomcat" password="tomcat" roles="manager-gui" />
+<role rolename="admin-gui" />  
+<user username="admin" password="admin" roles="manager-gui,admin-gui"/>
+
+-------------------------------------------xxxxxxxxx---------------------------------------------------------------------
+
 
